@@ -1,0 +1,27 @@
+<!-- views/show.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    <h1><%= post.title %></h1>
+    <div class="post-content">
+      <p><%= post.content %></p>
+    </div>
+    <a href="/posts/<%= post.id %>/edit" class="edit-button">Edit</a>
+    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+      <button type="submit" class="delete-button">Delete</button>
+    </form>
+    <% include("partials/footer.ejs") %>
+  </body>
+</html>

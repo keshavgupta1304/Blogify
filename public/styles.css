@@ -1,0 +1,164 @@
+/* public/styles.css */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2a2626;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1px;
+  color: #ffd700;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #222;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.button {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 17px;
+}
+
+.button:hover {
+  background-color: #f9ca24;
+  color: #000;
+}
+
+/* Styling for new.ejs file */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  background-color: #111;
+  color: #ffd700;
+  font-size: 26px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #f9ca24;
+  color: #000;
+}
+.edit-button{
+  width: 40px;
+}
+.edit-button,
+.delete-button {
+  display: block;
+  margin: 0px auto;
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+}
+

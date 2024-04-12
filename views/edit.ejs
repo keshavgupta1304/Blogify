@@ -1,0 +1,31 @@
+<!-- views/edit.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Edit Post</h1>
+    </header>
+    <% include("partials/header.ejs") %>
+
+    <form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+      <label for="title">Title:</label><br />
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value="<%= post.title %>"
+      /><br />
+      <label for="content">Content:</label><br />
+      <textarea id="content" name="content"><%= post.content %></textarea><br />
+      <button type="submit" class="button">Update Post</button>
+    </form>
+    <% include("partials/footer.ejs") %>
+  </body>
+</html>
