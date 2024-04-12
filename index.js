@@ -16,11 +16,11 @@ let posts = [
 ];
 
 app.get('/', (req, res) => {
-  res.render('index', { posts: posts });
+  res.render('index.ejs', { posts: posts });
 });
 
 app.get('/posts/new', (req, res) => {
-  res.render('new');
+  res.render('new.ejs');
 });
 
 app.post('/posts', (req, res) => {
@@ -38,13 +38,13 @@ app.post('/posts', (req, res) => {
 app.get('/posts/:id', (req, res) => {
   const postId = parseInt(req.params.id);
   const post = posts.find(post => post.id === postId);
-  res.render('show', { post: post });
+  res.render('show.ejs', { post: post });
 });
 
 app.get('/posts/:id/edit', (req, res) => {
   const postId = parseInt(req.params.id);
   const post = posts.find(post => post.id === postId);
-  res.render('edit', { post: post });
+  res.render('edit.ejs', { post: post });
 });
 
 app.put('/posts/:id', (req, res) => {
