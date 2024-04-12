@@ -6,11 +6,13 @@ const port = 3000;
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
+app.set('views', './views');
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 let posts = [
-  
+
 ];
 
 app.get('/', (req, res) => {
