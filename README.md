@@ -25,7 +25,7 @@ This is a Blog web application using Node.js, Express.js, and EJS. The applicati
   Step 1:Firstly open your preferred IDE and initialise git in your directory .
  
   Step 2:Then clone the project by using this command in your terminal
-         ```git clone https://github.com/keshavgupta1304/Blogify.git```
+      ```git clone https://github.com/keshavgupta1304/Blogify.git```
 
   Step 3:Then run 
           ```npm init -y```
